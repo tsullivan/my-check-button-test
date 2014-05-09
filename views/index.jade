@@ -1,0 +1,26 @@
+extends layout
+
+block content
+
+	h2 Customer Satisfaction Survey
+
+	form(method="get" action="")
+
+		fieldset
+			legend Where did you first hear about the business in question?
+
+			p
+				input#heard1.my-check-button(type="checkbox" name="heard_friend" value="1")
+				input#heard2.my-check-button(type="checkbox" name="heard_radio" value="1")
+				input#heard3.my-check-button(type="checkbox" name="heard_internet" value="1")
+				input#heard4.my-check-button(type="checkbox" name="heard_newspaper" value="1")
+				input#heard5.my-check-button(type="checkbox" name="heard_other" value="1")
+
+				button.btn.btn-default.my-check-button(type="button" data-my-check-button-toggle="#heard1") Referred by family / friend
+				button.btn.btn-default.my-check-button(type="button" data-my-check-button-toggle="#heard2") Radio advertisement
+				button.btn.btn-default.my-check-button(type="button" data-my-check-button-toggle="#heard3") Internet search engine
+				button.btn.btn-default.my-check-button(type="button" data-my-check-button-toggle="#heard4") Local newspaper advertisement
+				button.btn.btn-default.my-check-button(type="button" data-my-check-button-toggle="#heard5") Other
+
+		p
+			input.btn.btn-primary(type="submit" value="Next")

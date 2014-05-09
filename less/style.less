@@ -1,0 +1,35 @@
+//
+// Example code to test and illustrate simple usage of the component
+//
+@import "vendor/bootstrap/less/bootstrap";
+@import "vendor/my-check-button/less/my-check-button";
+
+// variable customizations
+@body-bg: rgb(203, 200, 211);
+@btn-default-border: @body-bg;
+
+// TODO: make the component use these variables + allow customization
+@my-check-button-checked: ' √';
+@my-check-button-unchecked: '';
+
+
+html,
+body {
+	margin:0;
+	padding: 1em;
+}
+
+fieldset {
+	padding: 1em;
+	margin-bottom: 2em;
+
+	border: 1px solid darken(@body-bg, 10);
+}
+
+legend {
+	width: auto;
+	padding: 0.2em;
+	margin: 0;
+
+	border: none;
+}

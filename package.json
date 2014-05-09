@@ -1,0 +1,28 @@
+{
+  "name": "my-check-button-tester",
+  "main": "index.js",
+  "version": "0.0.1",
+  "author": {
+    "name": "Tim Sullivan",
+    "url": "https://github.com/tsullivan"
+  },
+  "description": "tester of the my-check-button component",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "3.4.8",
+    "jade": "*",
+    "mongoskin": "^1.3.20"
+  },
+  "devDependencies": {
+    "gulp": "^3.5.5",
+    "gulp-less": "^1.2.1",
+    "gulp-util": "^2.2.14",
+    "gulp-jshint": "^1.5.0",
+    "tiny-lr": "0.0.5",
+    "nodemon": "^1.0.15",
+    "gulp-concat": "^2.1.7",
+    "browserify": "^3.32.0"
+  }
+}

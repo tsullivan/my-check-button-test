@@ -7,6 +7,10 @@
     "url": "https://github.com/tsullivan"
   },
   "description": "tester of the my-check-button component",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:tsullivan/my-check-button-test.git"
+  },
   "scripts": {
     "start": "node index.js"
   },

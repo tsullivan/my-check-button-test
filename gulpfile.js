@@ -60,9 +60,7 @@ gulp.task('scripts', function () {
 			.pipe(fs.createWriteStream(__dirname + '/public/js/app.js'));
 
 	gulp.src([
-			'vendor/lodash/dist/lodash.underscore.min.js',
-			'vendor/jquery/dist/jquery.min.js',
-			'vendor/backbone/backbone.js'
+			'vendor/jquery/jquery.min.js'
 		])
 		.pipe(concat('vendor.js'))
 		.pipe(gulp.dest('public/js'));

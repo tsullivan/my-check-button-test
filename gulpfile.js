@@ -71,8 +71,8 @@ gulp.task('less', function () {
 gulp.task('watch', function () {
 	log('Watching Files');
 
-	gulp.watch('less/*.less', ['less']);
 	gulp.watch(['vendor/*.js', 'client/*.js'], ['lint', 'scripts']);
+	gulp.watch(['vendor/**/*.less', 'less/*.less'], ['less']);
 
 	gulp.watch([
 			'public/css/style.css',

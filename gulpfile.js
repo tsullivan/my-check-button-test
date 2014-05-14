@@ -58,13 +58,6 @@ gulp.task('scripts', function () {
 	var b = browserify('./client/main.js')
 			.bundle()
 			.pipe(fs.createWriteStream(__dirname + '/public/js/app.js'));
-
-	gulp.src([
-			'vendor/jquery/jquery.min.js'
-		])
-		.pipe(concat('vendor.js'))
-		.pipe(gulp.dest('public/js'));
-
 });
 
 gulp.task('less', function () {
@@ -78,8 +71,8 @@ gulp.task('less', function () {
 gulp.task('watch', function () {
 	log('Watching Files');
 
-	gulp.watch('client/*.js', ['lint', 'scripts']);
 	gulp.watch('less/*.less', ['less']);
+	gulp.watch(['vendor/*.js', 'client/*.js'], ['lint', 'scripts']);
 
 	gulp.watch([
 			'public/css/style.css',
